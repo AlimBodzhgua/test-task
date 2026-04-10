@@ -12,12 +12,12 @@ import {
 export function About() {
 	return (
 		<section
-			className='flex flex-col h-screen bg-linear-to-r from-gray-900 to-black'
+			className='flex h-screen flex-col bg-linear-to-r from-gray-900 to-black'
 			id='about'
 		>
-			<h1 className='text-7xl uppercase text-white font-bold mx-auto my-10'>About</h1>
+			<h1 className='mx-auto my-10 text-7xl font-bold text-white uppercase'>About</h1>
 			<div className='flex gap-8 px-10'>
-				<div className='flex flex-col gap-4 text-white text-lg w-[50%]'>
+				<div className='flex w-[50%] flex-col gap-4 text-lg text-white'>
 					<p>
 						Frontend developer with 2+ years of intensive independent practice in
 						React and TypeScript.
@@ -38,18 +38,18 @@ export function About() {
 						review and work on real projects.
 					</p>
 				</div>
-				<div className='flex items-center justify-center w-[50%]'>
-					<div className='flex flex-col items-center relative bg-gray-950 text-white border-0 rounded-3xl px-4 py-8'>
+				<div className='flex w-[50%] items-center justify-center'>
+					<div className='relative flex flex-col items-center rounded-3xl border-0 bg-gray-950 px-4 py-8 text-white'>
 						<ShineBorder shineColor={['#A07CFE', '#FE8FB5', '#FFBE7B']} />
-						<div className='flex items-center flex-col'>
-							<div className='w-[125px] h-[125px] rounded-full bg-blue-300 my-auto mb-4'></div>
-							<h3 className='text-2xl font-bold mb-2'>Alim Bodzhgua</h3>
-							<h4 className='text-xl text-gray-400 font-medium'>
+						<div className='flex flex-col items-center'>
+							<div className='my-auto mb-4 h-[125px] w-[125px] rounded-full bg-blue-300'></div>
+							<h3 className='mb-2 text-2xl font-bold'>Alim Bodzhgua</h3>
+							<h4 className='text-xl font-medium text-gray-400'>
 								Frontend Developer
 							</h4>
 						</div>
-						<div className='flex items-center gap-4 my-4'>
-							<div className='flex items-center gap-2 px-3 py-2 rounded-2xl border border-blue-400 text-blue-600'>
+						<div className='my-4 flex items-center gap-4'>
+							<div className='flex items-center gap-2 rounded-2xl border border-blue-400 px-3 py-2 text-blue-600'>
 								<MapPinIcon size={21} className='text-blue-300' />
 								<TextShimmer
 									duration={3}
@@ -58,7 +58,7 @@ export function About() {
 									Russia, Krasnodar
 								</TextShimmer>
 							</div>
-							<div className='flex items-center gap-2 px-3 py-2 rounded-2xl border border-green-400 text-green-600'>
+							<div className='flex items-center gap-2 rounded-2xl border border-green-400 px-3 py-2 text-green-600'>
 								<CircleCheckIcon size={21} className='text-green-300' />
 								<TextShimmer
 									duration={3}
@@ -69,9 +69,9 @@ export function About() {
 							</div>
 						</div>
 
-						<div className='flex flex-row gap-5 items-center justify-center my-4'>
+						<div className='my-4 flex flex-row items-center justify-center gap-5'>
 							<Tilt rotationFactor={15}>
-								<div className='group flex flex-col items-center px-4 py-4 gap-4 bg-black/20 backdrop-blur-md rounded-2xl border border-white/10 shadow-xl transition-colors hover:bg-purple-400'>
+								<div className='group flex flex-col items-center gap-4 rounded-2xl border border-white/10 bg-black/20 px-4 py-4 shadow-xl backdrop-blur-md transition-colors hover:bg-purple-400'>
 									<BookMarkedIcon
 										className='text-purple-500 transition-colors group-hover:text-white'
 										size={32}
@@ -86,7 +86,7 @@ export function About() {
 							</Tilt>
 
 							<Tilt rotationFactor={15} isRevese>
-								<div className='group flex flex-col items-center px-4 py-4 gap-4 bg-black/20 backdrop-blur-md rounded-2xl border border-white/10 shadow-xl transition-colors hover:bg-blue-400'>
+								<div className='group flex flex-col items-center gap-4 rounded-2xl border border-white/10 bg-black/20 px-4 py-4 shadow-xl backdrop-blur-md transition-colors hover:bg-blue-400'>
 									<CodeXmlIcon
 										className='text-blue-500 transition-colors group-hover:text-white'
 										size={32}
@@ -101,7 +101,7 @@ export function About() {
 							</Tilt>
 
 							<Tilt rotationFactor={15} isRevese>
-								<div className='group flex flex-col items-center px-4 py-4 gap-4 bg-black/20 backdrop-blur-md rounded-2xl border border-white/10 shadow-xl transition-colors hover:bg-red-500'>
+								<div className='group flex flex-col items-center gap-4 rounded-2xl border border-white/10 bg-black/20 px-4 py-4 shadow-xl backdrop-blur-md transition-colors hover:bg-red-500'>
 									<CalendarDaysIcon
 										className='text-red-500 transition-colors group-hover:text-white'
 										size={32}
