@@ -4,7 +4,7 @@ import { LightRays } from '@/components/ui';
 
 export function Skills() {
 	return (
-		<section className='relative h-screen w-full overflow-hidden bg-linear-to-tr from-gray-900 to-black' id='skill'>
+		<section className='relative h-screen w-full overflow-hidden bg-linear-to-b from-gray-950 via-slate-900 to-gray-950' id='skill'>
 			{/* <LightRays count={14}/> */}
 			<div className='flex flex-col justify-center items-center mx-auto my-15'>
 				<h1 className='text-6xl text-white font-bold mb-4'>Tech Stack</h1>
