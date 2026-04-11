@@ -6,3 +6,4 @@ export { ShineBorder } from './shine-border';
 export { TextShimmer } from './text-shimmer';
 export { LightRays } from './light-rays';
 export { Tilt } from './tilt';
+export * from '@/components/ui/3d-card';
