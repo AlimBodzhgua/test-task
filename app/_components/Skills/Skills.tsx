@@ -1,18 +1,17 @@
+import { Marquee, LightRays } from '@/components/ui';
 import {
-	additionalFrontendSkills,
 	backendSkills,
 	frontendSkills,
+	additionalFrontendSkills,
 	otherSkills,
 } from './constants';
-import { LightRays } from '@/components/ui';
-import { Marquee } from '@/components/ui/marquee';
 import { SkillCard } from './SkillCard';
 
 export function Skills() {
 	return (
 		<section
 			className='relative h-screen w-full overflow-hidden bg-linear-to-b from-gray-950 via-slate-950 to-gray-950'
-			id='skill'
+			id='skills'
 		>
 			<LightRays count={14} />
 			<div className='mx-auto my-15 flex flex-col items-center justify-center'>
