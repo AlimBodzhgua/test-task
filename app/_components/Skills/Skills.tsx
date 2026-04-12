@@ -14,12 +14,12 @@ export function Skills() {
 				via-slate-950 to-gray-950'
 			id='skills'
 		>
-			<div className='flex flex-col items-center justify-center gap-2 py-10 mb-2'>
+			<div className='flex flex-col items-center justify-center gap-3 md:gap-6 py-5 md:py-10'>
 				<BlurFade duration={0.7} direction='up' inView>
-					<h1 className='mb-4 text-6xl font-bold text-white'>Tech Stack</h1>
+					<h1 className='text-4xl md:text-6xl font-bold text-white'>Tech Stack</h1>
 				</BlurFade>
 				<BlurFade duration={0.9} direction='up' inView>
-					<div className='text-lg font-light text-gray-400'>
+					<div className='text-md md:text-xl font-light text-gray-400'>
 						Technologies and tools i use to build web application
 					</div>
 				</BlurFade>
