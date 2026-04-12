@@ -11,9 +11,10 @@ export function SkillCard(props: SkillCardProps) {
 	return (
 		<div
 			key={iconName}
-			className={
-				'group/skill flex min-w-30 flex-col items-center gap-1 rounded-lg border-2 border-slate-900 bg-[#141820]/20 p-4 transition-all duration-300 ease-in-out hover:-translate-y-2 hover:border-blue-400 hover:shadow-lg hover:shadow-blue-500'
-			}
+			className={`group/skill flex min-w-30 flex-col items-center gap-1 rounded-lg
+				border-2 border-slate-900 bg-[#141820]/20 p-4 transition-all duration-300
+				ease-in-out hover:-translate-y-2 hover:border-blue-400 hover:shadow-lg
+				hover:shadow-blue-500`}
 		>
 			<Image
 				src={`/icons/${iconName}`}
@@ -23,7 +24,7 @@ export function SkillCard(props: SkillCardProps) {
 				className='group-hover/skill:scale-115'
 			/>
 			<div
-				className={`text-base font-medium text-gray-500 group-hover/skill:text-white`}
+				className={'text-base font-medium text-gray-500 group-hover/skill:text-white'}
 			>
 				{skillName}
 			</div>
