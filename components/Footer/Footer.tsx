@@ -4,6 +4,7 @@ import {
 	Mail as MailIcon,
 	UserRound as UserRoundIcon,
 } from 'lucide-react';
+import Image from 'next/image';
 import { Button } from '../ui';
 
 export function Footer() {
@@ -43,6 +44,22 @@ export function Footer() {
 							<MailIcon className='text-white' size={16}/>
 							<h3 className='text-white font-bold uppercase'>Socials</h3>
 						</div>
+						<div>
+							<Button
+								asChild
+								size='lg'
+								className='px-2 transition-transform hover:-translate-y-1 hover:opacity-95'
+							>
+								<a href='https://github.com/AlimBodzhgua' target='_blank'>
+									<Image
+										src={`/icons/github.svg`}
+										width={40}
+										height={40}
+										alt='GitHub icon'
+									/>
+								</a>
+							</Button>
+						</div>
 					</div>
 				</div>
 
@@ -51,8 +68,10 @@ export function Footer() {
 						<span className='font-bold mr-1'>&#169;</span>
 						2026 Alim Bodzhuga. All rights reserved. Built with Next.js & Tailwind CSS.
 					</div>
-					<Button className='rounded-3xl' size='icon'>
-						<ArrowUpIcon />
+					<Button className='rounded-3xl transition-transform hover:-translate-y-1' size='icon' asChild>
+						<a href="#home">
+							<ArrowUpIcon />
+						</a>
 					</Button>
 				</div>
 			</div>
