@@ -1,65 +1,40 @@
 import {
 	ArrowUp as ArrowUpIcon,
 	Link as LinkIcon,
-	Mail as MailIcon,
 	UserRound as UserRoundIcon,
 } from 'lucide-react';
-import Image from 'next/image';
 import { Button } from '../ui';
 
 export function Footer() {
 	return (
 		<footer className='bg-black py-8'>
-			<div className=' max-w-7xl mx-auto'>
-				<div className='flex justify-center gap-10 mb-10'>
+			<div className=' max-w-7xl mx-auto px-5'>
+				<div className='flex justify-center flex-wrap md:flex-nowrap gap-6 mb-6'>
 
-					<div className='space-y-5 w-[33%]'>
+					<div className='space-y-5 w-full'>
 						<div className='flex justify-start items-center  gap-2 mb-3'>
 							<UserRoundIcon className='text-white' size={16}/>
 							<h3 className='text-white text-xl font-bold uppercase'>
 								Alim Bodzhgua
 							</h3>
 						</div>
-						<p className='text-gray-400 w-[60%]'>
+						<p className='text-gray-400'>
 							Frontend developer building modern and scalable web applications
 						</p>
 					</div>
 
-					<div className='flex flex-col items-start w-[33%]'>
+					<div className='flex flex-col items-start w-full'>
 						<div className='flex justify-start items-center gap-2 mb-3'>
 							<LinkIcon className='text-white' size={16}/>
-							<h3 className='text-white font-bold uppercase'>Quick Links</h3>
+							<h3 className='text-white text-xl font-bold uppercase'>Quick Links</h3>
 						</div>
-						<nav className='flex flex-col gap-2 text-gray-400'>
-							<a href='#home'>Home</a>
-							<a href='#about'>About</a>
-							<a href='#skills'>Skills</a>
-							<a href='#portfolio'>Portfolio</a>
-							<a href='#contact'>Contact</a>
+						<nav className='flex flex-row gap-3 text-gray-400'>
+							<a href='#home' className='transition-colors hover:text-white'>Home</a>
+							<a href='#about' className='transition-colors hover:text-white'>About</a>
+							<a href='#skills' className='transition-colors hover:text-white'>Skills</a>
+							<a href='#portfolio' className='transition-colors hover:text-white'>Portfolio</a>
+							<a href='#contact' className='transition-colors hover:text-white'>Contact</a>
 						</nav>
-					</div>
-
-					<div className='w-[33%]'>
-						<div className='flex justify-start items-center gap-2 mb-3'>
-							<MailIcon className='text-white' size={16}/>
-							<h3 className='text-white font-bold uppercase'>Socials</h3>
-						</div>
-						<div>
-							<Button
-								asChild
-								size='lg'
-								className='px-2 transition-transform hover:-translate-y-1 hover:opacity-95'
-							>
-								<a href='https://github.com/AlimBodzhgua' target='_blank'>
-									<Image
-										src={`/icons/github.svg`}
-										width={40}
-										height={40}
-										alt='GitHub icon'
-									/>
-								</a>
-							</Button>
-						</div>
 					</div>
 				</div>
 
