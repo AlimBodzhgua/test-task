@@ -1,3 +1,4 @@
+export { Text3DFlip } from './text-3d-flip';
 export { BlurFade } from './blur-fade';
 export { Button } from './button';
 export { ShineBorder } from './shine-border';

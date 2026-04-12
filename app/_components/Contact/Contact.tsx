@@ -10,7 +10,7 @@ import Image from 'next/image';
 
 export function Contact() {
 	return (
-		<section className='relative flex h-screen flex-col items-center overflow-hidden bg-gray-950'>
+		<section id='contact' className='relative flex h-screen flex-col items-center overflow-hidden bg-gray-950'>
 			<div className='absolute inset-0 z-0'>
 				<Particles
 					particleColors={['#ffffff']}

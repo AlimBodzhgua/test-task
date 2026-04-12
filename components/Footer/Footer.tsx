@@ -30,10 +30,11 @@ export function Footer() {
 							<h3 className='text-white font-bold uppercase'>Quick Links</h3>
 						</div>
 						<nav className='flex flex-col gap-2 text-gray-400'>
-							<div>Home</div>
-							<div>Skills</div>
-							<div>Portfolio</div>
-							<div>Contact</div>
+							<a href='#home'>Home</a>
+							<a href='#about'>About</a>
+							<a href='#skills'>Skills</a>
+							<a href='#portfolio'>Portfolio</a>
+							<a href='#contact'>Contact</a>
 						</nav>
 					</div>
 
