@@ -19,12 +19,12 @@ export function Home() {
 				/>
 			</div>
 			<div>
-				<div className='mb-5 flex flex-col items-center justify-center gap-3'>
+				<div className='mb-5 flex flex-col items-center justify-center gap-2 md:gap-3'>
 					<BlurFade delay={0.25} inView>
 						<div className='text-5xl font-bold'>Hi, i'am</div>
 					</BlurFade>
 					<BlurFade delay={0.25 * 2} inView>
-						<h1 className='text-6xl font-extrabold text-gray-900 uppercase'>
+						<h1 className='text-5xl sm:text-6xl font-extrabold text-gray-900 uppercase text-center'>
 							Alim Bodzhgua
 						</h1>
 					</BlurFade>
@@ -50,7 +50,7 @@ export function Home() {
 					</BlurFade>
 				</div>
 				<BlurFade delay={1}>
-					<div className='relative z-10 mt-25 flex items-center justify-center gap-6'>
+					<div className='relative z-10 mt-15 md:mt-25 flex items-center flex-wrap justify-center gap-6'>
 						<GlassButton className='rounded-2xl text-lg hover:scale-110'>
 							<div className='flex items-center gap-2'>
 								<MailIcon />
