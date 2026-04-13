@@ -1,6 +1,6 @@
 import type { CardIconColors, StatCardType } from './types';
 import { Tilt } from '@/components/ui';
-import { cn } from '@/lib/utils';
+import { cn } from '@/snared/lib/utils';
 
 const mapToHoverColors: Record<CardIconColors, string> = {
 	purple: 'hover:bg-purple-500',

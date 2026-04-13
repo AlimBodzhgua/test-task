@@ -1,6 +1,6 @@
 import type { NavbarItemType, SectionType } from './types';
 
-import { cn } from '@/lib/utils';
+import { cn } from '@/snared/lib/utils';
 import { Button, Text3DFlip } from '../ui';
 
 interface NavbarItemProps extends NavbarItemType {

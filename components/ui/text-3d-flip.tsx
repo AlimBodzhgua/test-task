@@ -7,7 +7,7 @@ import {
 	type ValueAnimationTransition,
 } from 'motion/react';
 
-import { cn } from '@/lib/utils';
+import { cn } from '@/snared/lib/utils';
 
 const HAS_SEGMENTER = typeof Intl !== 'undefined' && 'Segmenter' in Intl;
 
