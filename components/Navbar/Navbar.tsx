@@ -37,11 +37,11 @@ export function Navbar() {
 		<BlurFade
 			duration={0.7}
 			direction={isMobile ? 'up' : 'down'}
-			className='fixed bottom-0 sm:top-0 right-0 left-0 z-50'
+			className='fixed bottom-0 mt-6 mb-6 sm:bottom-auto sm:top-0 left-[50%] -translate-x-[50%] z-50'
 		>
 			<nav
 				className={cn(
-					` row mx-auto mt-6 mb-6 flex max-w-90 sm:max-w-105 md:max-w-155
+					` row mx-auto flex max-w-90 sm:max-w-105 md:max-w-155
 					items-center justify-center md:justify-between rounded-full bg-gray-950
 					px-4 py-3 sm:px-7 sm:py-4 transition-all`,
 					activeSection !== 'home' &&

@@ -7,7 +7,7 @@ import { Button } from '../ui';
 
 export function Footer() {
 	return (
-		<footer className='bg-black py-8 relative z-50'>
+		<footer className='bg-black py-8'>
 			<div className=' max-w-7xl mx-auto px-5'>
 				<div className='flex justify-center flex-wrap md:flex-nowrap gap-6 mb-6'>
 
