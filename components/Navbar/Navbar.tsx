@@ -52,7 +52,7 @@ export function Navbar() {
 				<div className='hidden md:block'>
 					<h1
 						className={cn(
-							'text-xl font-bold text-white transition-colors',
+							'text-xl font-bold text-white transition-colors mr-10 lg:mr-18',
 							activeSection !== 'home' && 'text-slate-400',
 						)}
 					>
