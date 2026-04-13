@@ -6,7 +6,6 @@ export { ShineBorder } from './shine-border';
 export { TypingAnimation } from './typing-animation';
 export { TextShimmer } from './text-shimmer';
 export { Tilt } from './tilt';
-export { LightRays } from './light-rays';
 export { GlassButton } from './glass-button';
 export { Marquee } from './marquee';
 export * from '@/components/ui/3d-card';

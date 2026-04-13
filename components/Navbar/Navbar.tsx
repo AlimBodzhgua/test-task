@@ -62,7 +62,6 @@ export function Navbar() {
 							key={item.section}
 							Icon={item.Icon}
 							section={item.section}
-							text={item.text}
 							activeSection={activeSection}
 						/>
 					))}
