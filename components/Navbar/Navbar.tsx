@@ -1,21 +1,15 @@
 'use client';
 
-import { useEffect, useState } from 'react';
-import {
-	Briefcase as BriefcaseIcon,
-	CircleUser as CircleUserIcon,
-	Code as CodeIcon,
-	House as HouseIcon,
-	Mail as MailIcon,
-} from 'lucide-react';
-import { BlurFade, Button, Text3DFlip } from '../ui';
-import { cn } from '@/lib/utils';
+import type { SectionType } from './types';
 
-type SectionType = 'home' | 'about' | 'skills' | 'portfolio' | 'contact';
-const sections: SectionType[] = ['home', 'about', 'skills', 'contact'];
+import { useEffect, useState } from 'react';
+import { cn } from '@/lib/utils';
+import { navbarList, sections } from './constants';
+import { NavbarItem } from './NavbarItem';
+import { BlurFade } from '../ui';
 
 export function Navbar() {
-	const [activeSection, setActiveSection] = useState<SectionType | null>(null);
+	const [activeSection, setActiveSection] = useState<SectionType>();
 
 	useEffect(() => {
 		const observer = new IntersectionObserver(
@@ -50,140 +44,15 @@ export function Navbar() {
 					</h1>
 				</div>
 				<div className='flex items-center justify-between gap-3'>
-					<Button
-						asChild
-						className='group hover:no-underline transition-colors text-slate-400
-							hover:text-white'
-						size='sm'
-						variant='link'
-					>
-						<a href='#home'>
-							<div
-								className={cn(
-									`absolute transition-transform scale-0 rounded-full
-									border-2 border-white bg-gray-600 p-3 text-white`,
-									activeSection === 'home' && 'scale-100',
-								)}
-							>
-								<HouseIcon className='size-7' />
-							</div>
-							<Text3DFlip
-								className={cn(activeSection === 'home' && 'scale-0')}
-								rotateDirection='top'
-								staggerFrom='center'
-							>
-								Home
-							</Text3DFlip>
-						</a>
-					</Button>
-
-					<Button
-						asChild
-						className='group hover:no-underline transition-colors text-slate-400
-							hover:text-white px-2'
-						size='sm'
-						variant='link'
-					>
-						<a href='#about'>
-							<div
-								className={cn(
-									`absolute transition-transform scale-0 rounded-full
-									border-2 border-white bg-gray-600 p-3 text-white`,
-									activeSection === 'about' && 'scale-100',
-								)}
-							>
-								<CircleUserIcon className='size-7' />
-							</div>
-							<Text3DFlip
-								className={cn(activeSection === 'about' && 'scale-0')}
-								rotateDirection='top'
-								staggerFrom='center'
-							>
-								About
-							</Text3DFlip>
-						</a>
-					</Button>
-
-					<Button
-						asChild
-						className='group hover:no-underline transition-colors text-slate-400
-							hover:text-white'
-						size='sm'
-						variant='link'
-					>
-						<a href='#skills'>
-							<div
-								className={cn(
-									`absolute transition-transform scale-0 rounded-full
-									border-2 border-white bg-gray-600 p-3 text-white`,
-									activeSection === 'skills' && 'scale-100',
-								)}
-							>
-								<CodeIcon className='size-7' />
-							</div>
-							<Text3DFlip
-								className={cn(activeSection === 'skills' && 'scale-0')}
-								rotateDirection='top'
-								staggerFrom='center'
-							>
-								Skills
-							</Text3DFlip>
-						</a>
-					</Button>
-
-					<Button
-						asChild
-						className='group hover:no-underline transition-colors text-slate-400
-							hover:text-white'
-						size='sm'
-						variant='link'
-					>
-						<a href='#portfolio'>
-							<div
-								className={cn(
-									`absolute transition-transform scale-0 rounded-full
-									border-2 border-white bg-gray-600 p-3 text-white`,
-									activeSection === 'portfolio' && 'scale-100',
-								)}
-							>
-								<BriefcaseIcon className='size-7' />
-							</div>
-							<Text3DFlip
-								className={cn(activeSection === 'portfolio' && 'scale-0')}
-								rotateDirection='top'
-								staggerFrom='center'
-							>
-								Portfolio
-							</Text3DFlip>
-						</a>
-					</Button>
-
-					<Button
-						asChild
-						className='group hover:no-underline transition-colors text-slate-400
-							hover:text-white'
-						size='sm'
-						variant='link'
-					>
-						<a href='#contact'>
-							<div
-								className={cn(
-									`absolute transition-transform scale-0 rounded-full
-									border-2 border-white bg-gray-600 p-3 text-white`,
-									activeSection === 'contact' && 'scale-100',
-								)}
-							>
-								<MailIcon className='size-7' />
-							</div>
-							<Text3DFlip
-								className={cn(activeSection === 'contact' && 'scale-0')}
-								rotateDirection='top'
-								staggerFrom='center'
-							>
-								Contact
-							</Text3DFlip>
-						</a>
-					</Button>
+					{navbarList.map((item) => (
+						<NavbarItem
+							key={item.section}
+							Icon={item.Icon}
+							section={item.section}
+							text={item.text}
+							activeSection={activeSection}
+						/>
+					))}
 				</div>
 			</nav>
 		</BlurFade>
