@@ -1,5 +1,4 @@
-import { BlurFade, Button, CardBody, CardContainer, CardItem } from '@/components/ui';
-import Particles from '@/components/ui/particles';
+import { BlurFade, Button, CardBody, CardContainer, CardItem, Particles } from '@/components/ui';
 import {
 	Mail as MailIcon,
 	MapPin as MapPinIcon,

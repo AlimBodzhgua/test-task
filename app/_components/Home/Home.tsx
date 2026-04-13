@@ -1,6 +1,7 @@
-import { FileText as FileTextIcon, Mail as MailIcon } from 'lucide-react';
+import { FileText as FileTextIcon } from 'lucide-react';
 import { GlassButton, BlurFade, TypingAnimation } from '@/components/ui';
-import Particles from '@/components/ui/particles';
+import { Particles } from '@/components/ui';
+import { ContactButton } from './ContactButton';
 
 export function Home() {
 	return (
@@ -51,12 +52,7 @@ export function Home() {
 				</div>
 				<BlurFade delay={1}>
 					<div className='relative z-10 mt-15 md:mt-25 flex items-center flex-wrap justify-center gap-6'>
-						<GlassButton className='rounded-2xl text-lg hover:scale-110'>
-							<div className='flex items-center gap-2'>
-								<MailIcon />
-								<div>Contact me</div>
-							</div>
-						</GlassButton>
+						<ContactButton />
 
 						<GlassButton className='rounded-2xl text-lg hover:scale-110'>
 							<a

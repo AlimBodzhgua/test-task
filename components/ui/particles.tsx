@@ -102,7 +102,7 @@ const fragment = /* glsl */ `
   }
 `;
 
-const Particles: React.FC<ParticlesProps> = ({
+export const Particles: React.FC<ParticlesProps> = ({
 	particleCount = 200,
 	particleSpread = 10,
 	speed = 0.1,
@@ -254,5 +254,3 @@ const Particles: React.FC<ParticlesProps> = ({
 
 	return <div ref={containerRef} className={`absolute w-full h-full ${className}`} />;
 };
-
-export default Particles;
