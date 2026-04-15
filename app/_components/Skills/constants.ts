@@ -14,9 +14,9 @@ export const frontendSkills: SkillType[] = [
 
 export const additionalFrontendSkills: SkillType[] = [
 	{ iconName: 'styledcomponents.svg', skillName: 'Styled Components' },
-	{ iconName: 'chakra-ui.svg', skillName: 'ChakraUI' },
-	{ iconName: 'ant-design.svg', skillName: 'AntDesign' },
-	{ iconName: 'shadcn-ui.svg', skillName: 'ShadcnUI' },
+	{ iconName: 'chakraui.svg', skillName: 'ChakraUI' },
+	{ iconName: 'antdesign.svg', skillName: 'AntDesign' },
+	{ iconName: 'shadcnui.svg', skillName: 'ShadcnUI' },
 	{ iconName: 'storybook.svg', skillName: 'Storybook' },
 	{ iconName: 'redux.svg', skillName: 'Redux' },
 	{ iconName: 'zustand.svg', skillName: 'Zustand' },
