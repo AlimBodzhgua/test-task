@@ -1,4 +1,5 @@
 import { BlurFade, Button, CardBody, CardContainer, CardItem, Particles } from '@/components/ui';
+import { GITHUB_LINK, TELEGRAM_LINK } from '@/snared/constants';
 import {
 	Mail as MailIcon,
 	MapPin as MapPinIcon,
@@ -94,7 +95,8 @@ export function Contact() {
 								<a
 									className='group/link flex cursor-pointer items-center
 										gap-4'
-									href='https://t.me/alimbodzhgua'
+									href={TELEGRAM_LINK}
+									target='_blank'
 								>
 									<div
 										className='rounded-2xl border-2 border-gray-600
@@ -154,7 +156,8 @@ export function Contact() {
 
 								<a
 									className='group/link flex items-center gap-4'
-									href='https://t.me/alimbodzhgua'
+									href={GITHUB_LINK}
+									target='_blank'
 								>
 									<div
 										className='rounded-2xl border-2 border-gray-600
