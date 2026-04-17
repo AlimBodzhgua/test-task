@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 import { Navbar } from '@/components/Navbar/Navbar';
 import { Footer } from '@/components/Footer/Footer';
+import AnimatedCursor from 'react-animated-cursor';
 import './globals.css';
 
 const geistSans = Geist({
@@ -27,6 +28,19 @@ export default function RootLayout({
 	return (
 		<html lang='en' className='scroll-smooth'>
 			<body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+				<AnimatedCursor
+					innerSize={12}
+					outerSize={35}
+					innerScale={1}
+					outerScale={1.5}
+					outerAlpha={0}
+					innerStyle={{
+						backgroundColor: '#ffff'
+					}}
+					outerStyle={{
+						border: '2px solid #a1a1a1'
+					}}
+				/>
 				<Navbar />
 					{children}
 				<Footer />
