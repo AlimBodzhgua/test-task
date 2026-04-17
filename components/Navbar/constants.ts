@@ -8,7 +8,7 @@ import {
 	Mail as MailIcon,
 } from 'lucide-react';
 
-export const sections: SectionType[] = ['home', 'about', 'skills', 'contact'];
+export const sections: SectionType[] = ['home', 'about', 'skills', 'portfolio', 'contact'];
 
 export const navbarList: NavbarItemType[] = [
 	{
