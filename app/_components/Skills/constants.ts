@@ -41,4 +41,5 @@ export const backendSkills: SkillType[] = [
 	{ iconName: 'postgresql.svg', skillName: 'PostgreSQL' },
 	{ iconName: 'prisma.svg', skillName: 'Prisma' },
 	{ iconName: 'mongodb.svg', skillName: 'MongoDB' },
+	{ iconName: 'mongoose.svg', skillName: 'Mongoose' },
 ];
