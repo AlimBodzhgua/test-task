@@ -23,7 +23,7 @@ export function Portfolio() {
 					<BlurFade
 						duration={0.9}
 						direction={index % 2 === 0 ? 'right' : 'left'}
-						className='h-full w-[40%]'
+						className='h-full w-[55%] sm:w-[40%]'
 						key={project.githubLink}
 						inView
 					>

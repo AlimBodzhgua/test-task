@@ -53,7 +53,7 @@ export function ProjectItem(props: ProjectItemProps) {
 					transition-all duration-300 [box-shadow:0_4px_30px_#4847474d]
 					hover:shadow-2xl'
 			>
-				<div className='flex justify-between items-start mb-3'>
+				<div className='flex flex-wrap gap-3 justify-between items-start mb-3'>
 					<h2
 						className='text-3xl font-semibold text-gray-400 group-hover:text-white
 							transition-colors'
