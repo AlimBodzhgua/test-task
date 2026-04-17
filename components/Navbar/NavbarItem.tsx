@@ -22,7 +22,7 @@ export function NavbarItem(props: NavbarItemProps) {
 				<div
 					className={cn(
 						`absolute transition-transform scale-0 rounded-full border-2
-						border-white bg-gray-600 p-3 text-white`,
+						border-white bg-blue-500 p-3 text-white`,
 						activeSection === section && 'scale-100',
 					)}
 				>
