@@ -9,3 +9,5 @@ export { Tilt } from './tilt';
 export { GlassButton } from './glass-button';
 export { Marquee } from './marquee';
 export * from '@/components/ui/3d-card';
+export * from '@/components/ui/dialog';
+export * from '@/components/ui/carousel'
