@@ -240,7 +240,7 @@ export function ProjectDetails(props: ProjectDetailsProps) {
 						</div>
 						<div className='flex gap-8'>
 							<a
-								href=''
+								href='mailto:bodzhgua2015@mail.ru'
 								target='_blank'
 								className='p-3 transition-colors bg-gray-100 hover:bg-gray-800
 									rounded-full text-gray-800 hover:text-gray-200 flex
