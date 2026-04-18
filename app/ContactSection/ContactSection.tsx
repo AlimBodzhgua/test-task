@@ -198,7 +198,7 @@ export function ContactSection() {
 											src='/icons/github.svg'
 											width={36}
 											height={36}
-											alt='GitHub icon'
+											alt='github-icon'
 										/>
 										<div className='text-lg text-gray-400'>GitHub</div>
 									</a>

@@ -20,7 +20,7 @@ export function SkillCard(props: SkillCardProps) {
 				src={`/icons/${iconName}`}
 				width={45}
 				height={45}
-				alt='Picture of the author'
+				alt='technology-icon'
 				className='group-hover/skill:scale-115'
 			/>
 			<div

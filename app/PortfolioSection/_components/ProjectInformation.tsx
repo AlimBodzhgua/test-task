@@ -39,9 +39,9 @@ export function ProjectInformation(props: ProjectInformationProps) {
 								>
 									<Image
 										key={tech}
-										alt='tech-icon'
 										height={32}
 										width={32}
+										alt='technology-icon'
 										src={`/icons/${tech.toLocaleLowerCase()}.svg`}
 										className='fill-black'
 									/>
@@ -64,9 +64,9 @@ export function ProjectInformation(props: ProjectInformationProps) {
 								>
 									<Image
 										key={tech}
-										alt='tech-icon'
 										height={32}
 										width={32}
+										alt='technology-icon'
 										src={`/icons/${tech.toLocaleLowerCase()}.svg`}
 										className='fill-black'
 									/>
@@ -89,9 +89,9 @@ export function ProjectInformation(props: ProjectInformationProps) {
 								>
 									<Image
 										key={tech}
-										alt='tech-icon'
 										height={32}
 										width={32}
+										alt='technology-icon'
 										src={`/icons/${tech.toLocaleLowerCase()}.svg`}
 										className='fill-black'
 									/>

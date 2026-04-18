@@ -72,7 +72,7 @@ export function ProjectItem(props: ProjectItemProps) {
 						>
 							<a href={githubLink} target='_blank' rel='noopener noreferrer'>
 								<Image
-									alt='github'
+									alt='github-icon'
 									height={24}
 									width={24}
 									src='/icons/github.svg'
