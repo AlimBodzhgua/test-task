@@ -1,3 +1,4 @@
+import type { ReactNode } from 'react';
 import type {
 	BackendTechnologyName,
 	CategoryType,
@@ -5,10 +6,8 @@ import type {
 	OthersTechnologyName,
 } from '../types';
 
-import { Info as InfoIcon } from 'lucide-react';
 import { VisuallyHidden } from 'radix-ui';
 import {
-	Button,
 	Dialog,
 	DialogContent,
 	DialogTitle,
@@ -18,7 +17,8 @@ import { ProjectSidebar } from './ProjectSidebar';
 import { ProjectScreenshots } from './ProjectScreenshots';
 import { ProjectInformation } from './ProjectInformation';
 
-type ProjectDetailsProps = {
+type ProjectDialogProps = {
+	children: ReactNode;
 	name: string;
 	description: string;
 	overview: string;
@@ -31,8 +31,9 @@ type ProjectDetailsProps = {
 	othersTechnologies: OthersTechnologyName[];
 };
 
-export function ProjectDetails(props: ProjectDetailsProps) {
+export function ProjectDialog(props: ProjectDialogProps) {
 	const {
+		children,
 		name,
 		description,
 		overview,
@@ -48,13 +49,7 @@ export function ProjectDetails(props: ProjectDetailsProps) {
 	return (
 		<Dialog>
 			<DialogTrigger asChild>
-				<Button
-					className='bg-gray-800 text-gray-300/90 hover:bg-gray-800/70
-						hover:-translate-y-1.5'
-					size='icon-lg'
-				>
-					<InfoIcon size={15} />
-				</Button>
+				{children}
 			</DialogTrigger>
 			<DialogContent className='h-[95vh] overflow-hidden min-w-[75%] flex py-10'>
 				<VisuallyHidden.Root>

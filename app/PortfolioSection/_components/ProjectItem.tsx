@@ -7,9 +7,10 @@ import type {
 } from '../types';
 
 import Image from 'next/image';
+import { InfoIcon } from 'lucide-react';
 import { Button } from '@/components/ui';
 import { Safari } from '@/components/ui/safari';
-import { ProjectDetails } from './ProjectDetails';
+import { ProjectDialog } from './ProjectDialog';
 
 interface ProjectItemProps {
 	name: string;
@@ -79,7 +80,7 @@ export function ProjectItem(props: ProjectItemProps) {
 							</a>
 						</Button>
 
-						<ProjectDetails
+						<ProjectDialog
 							name={name}
 							description={description}
 							overview={overview}
@@ -90,7 +91,15 @@ export function ProjectItem(props: ProjectItemProps) {
 							backendTechnologies={backendTechnologies}
 							othersTechnologies={othersTechnologies}
 							images={images}
-						/>
+						>
+							<Button
+								className='bg-gray-800 text-gray-300/90 hover:bg-gray-800/70
+									hover:-translate-y-1.5'
+								size='icon-lg'
+							>
+								<InfoIcon size={15} />
+							</Button>
+						</ProjectDialog>
 					</div>
 				</div>
 
