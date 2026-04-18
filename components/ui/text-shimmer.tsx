@@ -1,6 +1,9 @@
 'use client';
-import React, { useMemo, type JSX } from 'react';
+
+import type { JSX } from 'react';
+
 import { motion } from 'motion/react';
+import React, { useMemo } from 'react';
 import { cn } from '@/snared/lib/utils';
 
 export type TextShimmerProps = {

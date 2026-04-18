@@ -1,5 +1,6 @@
-import { GITHUB_LINK } from '@/snared/constants';
 import type { Project } from './types';
+
+import { GITHUB_LINK } from '@/snared/constants';
 
 export const FRONTEND_TECHNOLOGIES = [
 	'JavaScript',

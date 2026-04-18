@@ -14,7 +14,7 @@ export const navbarList: NavbarItemType[] = [
 	{
 		text: 'Home',
 		section: 'home',
-		Icon: HouseIcon
+		Icon: HouseIcon,
 	},
 	{
 		text: 'About',
@@ -36,4 +36,4 @@ export const navbarList: NavbarItemType[] = [
 		section: 'contact',
 		Icon: MailIcon,
 	},
-]
+];

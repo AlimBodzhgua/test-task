@@ -1,8 +1,8 @@
-import { Marquee, BlurFade } from '@/components/ui';
+import { BlurFade, Marquee } from '@/components/ui';
 import {
+	additionalFrontendSkills,
 	backendSkills,
 	frontendSkills,
-	additionalFrontendSkills,
 	otherSkills,
 } from './constants';
 import { SkillCard } from './SkillCard';

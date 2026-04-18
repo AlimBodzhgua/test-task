@@ -1,14 +1,16 @@
 'use client';
+import type { Transition } from 'motion/react';
+import type { ReactNode } from 'react';
+
+import { motion, useMotionValue } from 'motion/react';
 import {
 	Children,
-	ReactNode,
 	createContext,
 	useContext,
 	useEffect,
 	useRef,
 	useState,
 } from 'react';
-import { motion, Transition, useMotionValue } from 'motion/react';
 import { cn } from '@/snared/lib/utils';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 

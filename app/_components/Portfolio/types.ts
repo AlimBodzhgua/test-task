@@ -1,4 +1,4 @@
-import { BACKEND_TECHNOLOGIES, FRONTEND_TECHNOLOGIES, OTHERS_TECHNOLOGIES } from './constants';
+import type { BACKEND_TECHNOLOGIES, FRONTEND_TECHNOLOGIES, OTHERS_TECHNOLOGIES } from './constants';
 
 export type FrontendTechnologyName = (typeof FRONTEND_TECHNOLOGIES)[number];
 export type BackendTechnologyName = (typeof BACKEND_TECHNOLOGIES)[number];

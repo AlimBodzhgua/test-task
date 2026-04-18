@@ -1,5 +1,3 @@
-import { BlurFade, Button, CardBody, CardContainer, CardItem, Particles } from '@/components/ui';
-import { GITHUB_LINK, TELEGRAM_LINK } from '@/snared/constants';
 import {
 	Mail as MailIcon,
 	MapPin as MapPinIcon,
@@ -7,6 +5,8 @@ import {
 	Send as SendIcon,
 } from 'lucide-react';
 import Image from 'next/image';
+import { BlurFade, Button, CardBody, CardContainer, CardItem, Particles } from '@/components/ui';
+import { GITHUB_LINK, TELEGRAM_LINK } from '@/snared/constants';
 
 export function Contact() {
 	return (
@@ -193,9 +193,9 @@ export function Contact() {
 										py-6 hover:-translate-y-1 hover:border-blue-900
 										hover:bg-blue-500/35'
 								>
-									<a href='https://github.com/AlimBodzhgua' target='_blank'>
+									<a href={GITHUB_LINK} target='_blank'>
 										<Image
-											src={`/icons/github.svg`}
+											src='/icons/github.svg'
 											width={36}
 											height={36}
 											alt='GitHub icon'

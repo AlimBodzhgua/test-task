@@ -1,9 +1,9 @@
+import type { StatCardType } from './types';
 import {
 	BookMarked as BookMarkedIcon,
 	CalendarDays as CalendarDaysIcon,
 	CodeXml as CodeXmlIcon,
 } from 'lucide-react';
-import type { StatCardType } from './types';
 
 export const statCardsList: StatCardType[] = [
 	{

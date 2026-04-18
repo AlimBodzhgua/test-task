@@ -4,13 +4,13 @@ import { ProjectItem } from './ProjectItem';
 
 export function Portfolio() {
 	return (
-		<section id='portfolio' className='h-full py-5 bg-linear-to-b from-gray-950
-				via-slate-900 to-gray-950'>
+		<section
+			id='portfolio'
+			className='h-full py-5 bg-linear-to-b from-gray-950 via-slate-900 to-gray-950'
+		>
 			<div className='flex flex-col items-center justify-center gap-2 mb-14'>
 				<BlurFade duration={0.7} direction='up' inView>
-					<h1 className='text-5xl lg:text-7xl font-bold text-white'>
-						Projects
-					</h1>
+					<h1 className='text-5xl lg:text-7xl font-bold text-white'>Projects</h1>
 				</BlurFade>
 				<BlurFade duration={0.9} direction='up' inView>
 					<h2 className='text-2xl lg:text-3xl font-light text-gray-400'>
@@ -27,7 +27,7 @@ export function Portfolio() {
 						key={project.githubLink}
 						inView
 					>
-						<ProjectItem 
+						<ProjectItem
 							name={project.name}
 							description={project.description}
 							overview={project.overview}

@@ -1,8 +1,9 @@
 import type { Metadata } from 'next';
+
 import { Geist, Geist_Mono } from 'next/font/google';
-import { Navbar } from '@/components/Navbar/Navbar';
-import { Footer } from '@/components/Footer/Footer';
 import AnimatedCursor from 'react-animated-cursor';
+import { Footer } from '@/components/Footer/Footer';
+import { Navbar } from '@/components/Navbar/Navbar';
 import './globals.css';
 
 const geistSans = Geist({
@@ -35,10 +36,10 @@ export default function RootLayout({
 					outerScale={1.5}
 					outerAlpha={0}
 					innerStyle={{
-						backgroundColor: '#ffff'
+						backgroundColor: '#ffff',
 					}}
 					outerStyle={{
-						border: '2px solid #a1a1a1'
+						border: '2px solid #a1a1a1',
 					}}
 				/>
 				<Navbar />

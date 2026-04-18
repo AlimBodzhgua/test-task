@@ -24,7 +24,7 @@ export function SkillCard(props: SkillCardProps) {
 				className='group-hover/skill:scale-115'
 			/>
 			<div
-				className={'text-base font-medium text-gray-500 group-hover/skill:text-white'}
+				className='text-base font-medium text-gray-500 group-hover/skill:text-white'
 			>
 				{skillName}
 			</div>

@@ -1,21 +1,9 @@
 'use client';
+import type { DOMMotionComponents, HTMLMotionProps, MotionProps } from 'motion/react';
+import type { ComponentType, RefAttributes, RefObject } from 'react';
 
-import {
-	useEffect,
-	useMemo,
-	useRef,
-	useState,
-	type ComponentType,
-	type RefAttributes,
-	type RefObject,
-} from 'react';
-import {
-	motion,
-	useInView,
-	type DOMMotionComponents,
-	type HTMLMotionProps,
-	type MotionProps,
-} from 'motion/react';
+import { motion, useInView } from 'motion/react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 
 import { cn } from '@/snared/lib/utils';
 

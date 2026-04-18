@@ -3,12 +3,12 @@
 import type { SectionType } from './types';
 
 import { useEffect, useState } from 'react';
-import { cn } from '@/snared/lib/utils';
 import { useMediaQuery } from '@/snared/hooks/useMediaQuery';
+import { cn } from '@/snared/lib/utils';
+import { BlurFade } from '../ui';
 import { navbarList, sections } from './constants';
 import { MobileNavbarItem } from './MobileNavbarItem';
 import { NavbarItem } from './NavbarItem';
-import { BlurFade } from '../ui';
 
 export function Navbar() {
 	const [activeSection, setActiveSection] = useState<SectionType>();
@@ -27,7 +27,9 @@ export function Navbar() {
 
 		sections.forEach((id) => {
 			const element = document.getElementById(id);
-			if (element) observer.observe(element);
+			if (element) {
+				observer.observe(element);
+			}
 		});
 
 		return () => observer.disconnect();
@@ -44,9 +46,9 @@ export function Navbar() {
 					` row mx-auto flex max-w-90 sm:max-w-105 md:max-w-155
 					items-center justify-center md:justify-between rounded-full bg-gray-950
 					px-4 py-3 sm:px-7 sm:py-4 transition-all`,
-					activeSection !== 'home' &&
-						`backdrop-blur-md border-2 border-gray-500 bg-gradient-to-br
-						from-white/20 to-white/5 shadow-lg`,
+					activeSection !== 'home'
+						&& `backdrop-blur-md border-2 border-gray-500
+							bg-gradient-to-brfrom-white/20 to-white/5 shadow-lg`,
 				)}
 			>
 				<div className='hidden md:block'>

@@ -1,7 +1,3 @@
-import { Button } from '@/components/ui';
-import { Safari } from '@/components/ui/safari';
-import Image from 'next/image';
-import { ProjectDetails } from './ProjectDetails';
 import type {
 	BackendTechnologyName,
 	CategoryType,
@@ -9,6 +5,11 @@ import type {
 	OthersTechnologyName,
 	TechnologyName,
 } from './types';
+
+import Image from 'next/image';
+import { Button } from '@/components/ui';
+import { Safari } from '@/components/ui/safari';
+import { ProjectDetails } from './ProjectDetails';
 
 interface ProjectItemProps {
 	name: string;

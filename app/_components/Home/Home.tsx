@@ -1,6 +1,5 @@
 import { FileText as FileTextIcon } from 'lucide-react';
-import { GlassButton, BlurFade, TypingAnimation } from '@/components/ui';
-import { Particles } from '@/components/ui';
+import { BlurFade, GlassButton, Particles, TypingAnimation } from '@/components/ui';
 import { ContactButton } from './ContactButton';
 
 export function Home() {

@@ -1,15 +1,10 @@
-import {
-	Button,
-	Dialog,
-	DialogContent,
-	DialogTitle,
-	DialogTrigger,
-	Carousel,
-	CarouselContent,
-	CarouselIndicator,
-	CarouselItem,
-	CarouselNavigation,
-} from '@/components/ui';
+import type {
+	BackendTechnologyName,
+	CategoryType,
+	FrontendTechnologyName,
+	OthersTechnologyName,
+} from './types';
+
 import {
 	Calendar as CalendarIcon,
 	Code as CodeIcon,
@@ -19,16 +14,21 @@ import {
 	Send as SendIcon,
 	Tag as TagIcon,
 } from 'lucide-react';
-import { VisuallyHidden } from 'radix-ui';
-import { GITHUB_LINK, TELEGRAM_LINK } from '@/snared/constants';
 import Image from 'next/image';
-
-import type {
-	BackendTechnologyName,
-	CategoryType,
-	FrontendTechnologyName,
-	OthersTechnologyName,
-} from './types';
+import { VisuallyHidden } from 'radix-ui';
+import {
+	Button,
+	Carousel,
+	CarouselContent,
+	CarouselIndicator,
+	CarouselItem,
+	CarouselNavigation,
+	Dialog,
+	DialogContent,
+	DialogTitle,
+	DialogTrigger,
+} from '@/components/ui';
+import { GITHUB_LINK, TELEGRAM_LINK } from '@/snared/constants';
 
 type ProjectDetailsProps = {
 	name: string;
@@ -274,7 +274,7 @@ export function ProjectDetails(props: ProjectDetailsProps) {
 								alt='github-icon'
 								height={32}
 								width={32}
-								src={`/icons/github.svg`}
+								src='/icons/github.svg'
 								className='fill-black'
 							/>
 							<div className='font-semibold text-lg'>Source Code</div>

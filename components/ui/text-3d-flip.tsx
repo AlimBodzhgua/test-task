@@ -1,11 +1,10 @@
 'use client';
 
-import React, { memo, useCallback, useEffect, useMemo, useRef, type ElementType } from 'react';
-import {
-	useAnimate,
-	type AnimationOptions,
-	type ValueAnimationTransition,
-} from 'motion/react';
+import type { ElementType } from 'react';
+import type { AnimationOptions, ValueAnimationTransition } from 'motion/react';
+
+import React, { memo, useCallback, useEffect, useMemo, useRef } from 'react';
+import { useAnimate } from 'motion/react';
 
 import { cn } from '@/snared/lib/utils';
 
@@ -20,9 +19,17 @@ const splitIntoCharacters = (text: string): string[] => {
 };
 
 const extractTextFromChildren = (children: React.ReactNode): string => {
-	if (children == null) return '';
-	if (typeof children === 'string') return children;
-	if (typeof children === 'number') return String(children);
+	if (children == null) {
+		return '';
+	}
+
+	if (typeof children === 'string') {
+		return children;
+	}
+	
+	if (typeof children === 'number') {
+		return String(children);
+	}
 
 	if (Array.isArray(children)) {
 		return children.map(extractTextFromChildren).join('');
@@ -117,8 +124,12 @@ export const Text3DFlip = ({
 
 	const getStaggerDelay = useCallback(
 		(index: number, totalChars: number) => {
-			if (staggerFrom === 'first') return index * staggerDuration;
-			if (staggerFrom === 'last') return (totalChars - 1 - index) * staggerDuration;
+			if (staggerFrom === 'first') {
+				return index * staggerDuration;
+			}
+			if (staggerFrom === 'last') {
+				return (totalChars - 1 - index) * staggerDuration;
+			}
 			if (staggerFrom === 'center') {
 				const center = Math.floor(totalChars / 2);
 				return Math.abs(center - index) * staggerDuration;
