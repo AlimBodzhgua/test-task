@@ -31,7 +31,7 @@ export function About() {
 					inView
 				>
 					<div
-						className='flex flex-col gap-2 lg:gap-4 text-md lg:text-lg
+						className='flex flex-col gap-2 lg:gap-4 text-md lg:text-lg xl:text-xl
 							text-gray-400'
 					>
 						<p>
