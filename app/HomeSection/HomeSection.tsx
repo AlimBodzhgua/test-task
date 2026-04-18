@@ -2,7 +2,7 @@ import { FileText as FileTextIcon } from 'lucide-react';
 import { BlurFade, GlassButton, Particles, TypingAnimation } from '@/components/ui';
 import { ContactButton } from './ContactButton';
 
-export function Home() {
+export function HomeSection() {
 	return (
 		<section className='flex h-screen items-center justify-center bg-[#efeee8]' id='home'>
 			<div className='absolute inset-0 z-0'>

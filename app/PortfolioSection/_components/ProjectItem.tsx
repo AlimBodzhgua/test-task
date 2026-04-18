@@ -4,7 +4,7 @@ import type {
 	FrontendTechnologyName,
 	OthersTechnologyName,
 	TechnologyName,
-} from './types';
+} from '../types';
 
 import Image from 'next/image';
 import { Button } from '@/components/ui';

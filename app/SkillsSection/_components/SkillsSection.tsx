@@ -4,10 +4,10 @@ import {
 	backendSkills,
 	frontendSkills,
 	otherSkills,
-} from './constants';
+} from '../constants';
 import { SkillCard } from './SkillCard';
 
-export function Skills() {
+export function SkillsSection() {
 	return (
 		<section
 			className='relative h-screen w-full overflow-hidden bg-linear-to-b from-gray-950

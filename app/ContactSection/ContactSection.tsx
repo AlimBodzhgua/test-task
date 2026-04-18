@@ -8,7 +8,7 @@ import Image from 'next/image';
 import { BlurFade, Button, CardBody, CardContainer, CardItem, Particles } from '@/components/ui';
 import { GITHUB_LINK, TELEGRAM_LINK } from '@/snared/constants';
 
-export function Contact() {
+export function ContactSection() {
 	return (
 		<section
 			id='contact'

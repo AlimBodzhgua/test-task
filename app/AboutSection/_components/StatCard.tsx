@@ -1,4 +1,4 @@
-import type { CardIconColors, StatCardType } from './types';
+import type { CardIconColors, StatCardType } from '../types';
 import { Tilt } from '@/components/ui';
 import { cn } from '@/snared/lib/utils';
 

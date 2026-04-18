@@ -2,7 +2,7 @@ import type {
 	BackendTechnologyName,
 	FrontendTechnologyName,
 	OthersTechnologyName,
-} from './types';
+} from '../types';
 import { FileText as FileTextIcon, Code as CodeIcon } from 'lucide-react';
 import Image from 'next/image';
 

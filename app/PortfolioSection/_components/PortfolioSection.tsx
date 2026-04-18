@@ -1,8 +1,8 @@
 import { BlurFade } from '@/components/ui';
-import { projectsList } from './constants';
+import { projectsList } from '../constants';
 import { ProjectItem } from './ProjectItem';
 
-export function Portfolio() {
+export function PortfolioSection() {
 	return (
 		<section
 			id='portfolio'

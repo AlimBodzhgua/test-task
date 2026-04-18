@@ -1,4 +1,4 @@
-import type { CategoryType } from './types';
+import type { CategoryType } from '../types';
 import {
 	Calendar as CalendarIcon,
 	Code as CodeIcon,

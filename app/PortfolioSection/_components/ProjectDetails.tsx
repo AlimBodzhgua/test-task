@@ -3,7 +3,7 @@ import type {
 	CategoryType,
 	FrontendTechnologyName,
 	OthersTechnologyName,
-} from './types';
+} from '../types';
 
 import { Info as InfoIcon } from 'lucide-react';
 import { VisuallyHidden } from 'radix-ui';

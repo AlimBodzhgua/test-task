@@ -1,4 +1,4 @@
-import type { SkillType } from './constants';
+import type { SkillType } from '../types';
 import Image from 'next/image';
 
 type SkillCardProps = {

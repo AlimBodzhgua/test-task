@@ -1,9 +1,9 @@
 import { CircleCheck as CircleCheckIcon, MapPin as MapPinIcon } from 'lucide-react';
 import { BlurFade, ShineBorder, TextShimmer, Tilt } from '@/components/ui';
-import { statCardsList } from './constants';
+import { statCardsList } from '../constants';
 import { StatCard } from './StatCard';
 
-export function About() {
+export function AboutSection() {
 	return (
 		<section
 			className='flex h-full lg:h-full xl:h-screen flex-col bg-linear-to-r from-gray-900

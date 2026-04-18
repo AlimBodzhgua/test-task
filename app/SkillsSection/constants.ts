@@ -1,7 +1,5 @@
-export type SkillType = {
-	iconName: string;
-	skillName: string;
-};
+import type { SkillType } from './types';
+
 
 export const frontendSkills: SkillType[] = [
 	{ iconName: 'javascript.svg', skillName: 'JavaScript' },
