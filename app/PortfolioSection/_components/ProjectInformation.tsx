@@ -5,6 +5,7 @@ import type {
 } from '../types';
 import { FileText as FileTextIcon, Code as CodeIcon } from 'lucide-react';
 import Image from 'next/image';
+import { ContactData } from './ContactData';
 
 interface ProjectInformationProps {
 	frontendTechnologies: FrontendTechnologyName[];
@@ -17,7 +18,7 @@ export function ProjectInformation(props: ProjectInformationProps) {
 	const { frontendTechnologies, backendTechnologies, othersTechnologies, overview } = props;
 
 	return (
-		<div className='px-4 py-5'>
+		<div className='px-4'>
 			<div className='mb-10'>
 				<div className='flex gap-2 items-center mb-2'>
 					<CodeIcon />
@@ -102,12 +103,16 @@ export function ProjectInformation(props: ProjectInformationProps) {
 				</div>
 			</div>
 
-			<div>
+			<div className='mb-5 lg:mb-0'>
 				<div className='flex items-center gap-2 mb-3'>
 					<FileTextIcon />
 					<div className='font-semibold text-2xl'>Overview</div>
 				</div>
 				<p className='text-lg text-gray-500 px-4 py-1'>{overview}</p>
+			</div>
+
+			<div className='block lg:hidden'>
+				<ContactData />
 			</div>
 		</div>
 	);

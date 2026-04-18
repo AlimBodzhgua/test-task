@@ -1,14 +1,11 @@
 import type { CategoryType } from '../types';
 import {
 	Calendar as CalendarIcon,
-	Code as CodeIcon,
-	Mail as MailIcon,
-	Send as SendIcon,
 	Tag as TagIcon,
 } from 'lucide-react';
 import Image from 'next/image';
 import { Button } from '@/components/ui';
-import { GITHUB_LINK, TELEGRAM_LINK } from '@/snared/constants';
+import { ContactData } from './ContactData';
 
 interface ProjectSidebarProps {
 	name: string;
@@ -28,7 +25,7 @@ export function ProjectSidebar(props: ProjectSidebarProps) {
 	} = props;
 
 	return (
-		<div className='flex flex-col gap-4 w-[35%]'>
+		<div className='flex flex-col gap-4 w-full h-full'>
 			<div className='flex flex-col gap-5 pb-3 border-b-2'>
 				<h1 className='text-4xl font-bold'>{name}</h1>
 				<p className='text-lg'>{description}</p>
@@ -59,37 +56,8 @@ export function ProjectSidebar(props: ProjectSidebarProps) {
 					</div>
 				</div>
 			</div>
-			<div className='flex flex-col gap-4 items-center justify-center'>
-				<div className='font-semibold text-gray-400 text-md'>Connect With Me</div>
-				<div className='flex gap-8'>
-					<a
-						href='mailto:bodzhgua2015@mail.ru'
-						target='_blank'
-						className='p-3 transition-colors bg-gray-100 hover:bg-gray-800
-							rounded-full text-gray-800 hover:text-gray-200 flex justify-center
-							items-center'
-					>
-						<MailIcon size={26} />
-					</a>
-					<a
-						href={TELEGRAM_LINK}
-						target='_blank'
-						className='p-3 transition-colors bg-gray-100 hover:bg-gray-800
-							rounded-full text-gray-800 hover:text-gray-200 flex justify-center
-							items-center'
-					>
-						<SendIcon size={26} />
-					</a>
-					<a
-						href={GITHUB_LINK}
-						target='_blank'
-						className='p-3 transition-colors bg-gray-100 hover:bg-gray-800
-							rounded-full text-gray-800 hover:text-gray-200 flex justify-center
-							items-center'
-					>
-						<CodeIcon size={26} />
-					</a>
-				</div>
+			<div className='hidden lg:block'>
+				<ContactData />
 			</div>
 			<Button asChild className='flex items-center mt-auto' size='lg'>
 				<a href={githubLink} target='_blank'>
