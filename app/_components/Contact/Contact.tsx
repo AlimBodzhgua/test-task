@@ -43,7 +43,7 @@ export function Contact() {
 			</div>
 			<BlurFade duration={0.7} direction='down' inView>
 				<CardContainer
-					className='rounded-2xl bg-gray-900/60 px-4 py-2 md:px-14 md:py-6
+					className='rounded-2xl bg-gray-900/60 px-8 py-3 md:px-14 md:py-6
 						hover:shadow-xl hover:shadow-blue-400'
 				>
 					<CardBody
