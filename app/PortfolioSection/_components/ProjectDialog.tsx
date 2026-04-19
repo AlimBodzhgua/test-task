@@ -21,6 +21,7 @@ type ProjectDialogProps = {
 	createdAt: string;
 	githubLink: string;
 	images: string[];
+	features: string[];
 	frontendTechnologies: FrontendTechnologyName[];
 	backendTechnologies: BackendTechnologyName[];
 	othersTechnologies: OthersTechnologyName[];
@@ -33,6 +34,7 @@ export function ProjectDialog(props: ProjectDialogProps) {
 		description,
 		overview,
 		images,
+		features,
 		category,
 		createdAt,
 		githubLink,
@@ -60,6 +62,7 @@ export function ProjectDialog(props: ProjectDialogProps) {
 						backendTechnologies={backendTechnologies}
 						othersTechnologies={othersTechnologies}
 						overview={overview}
+						features={features}
 					/>
 				</div>
 
@@ -93,6 +96,7 @@ export function ProjectDialog(props: ProjectDialogProps) {
 						backendTechnologies={backendTechnologies}
 						othersTechnologies={othersTechnologies}
 						overview={overview}
+						features={features}
 					/>
 				</div>
 			</DialogContent>

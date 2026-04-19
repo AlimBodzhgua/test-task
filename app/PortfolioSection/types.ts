@@ -15,6 +15,7 @@ export type Project = {
 	githubLink: string;
 	previewImage: string;
 	images: string[];
+	features: string[];
 	createdAt: string;
 	category: CategoryType;
 	baseTechnologies: TechnologyName[];

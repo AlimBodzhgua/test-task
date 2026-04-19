@@ -37,6 +37,7 @@ export function PortfolioSection() {
 							category={project.category}
 							previewImage={project.previewImage}
 							images={project.images}
+							features={project.features}
 							baseTechnologies={project.baseTechnologies}
 							frontendTechnologies={project.frontendTechnologies}
 							backendTechnologies={project.backendTechnologies}

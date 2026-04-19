@@ -22,6 +22,7 @@ interface ProjectItemProps {
 	category: CategoryType;
 	createdAt: string;
 	images: string[];
+	features: string[];
 	baseTechnologies: TechnologyName[];
 	frontendTechnologies: FrontendTechnologyName[];
 	backendTechnologies: BackendTechnologyName[];
@@ -43,6 +44,7 @@ export function ProjectItem(props: ProjectItemProps) {
 		githubLink,
 		previewImage,
 		images,
+		features,
 	} = props;
 
 	return (
@@ -91,6 +93,7 @@ export function ProjectItem(props: ProjectItemProps) {
 							backendTechnologies={backendTechnologies}
 							othersTechnologies={othersTechnologies}
 							images={images}
+							features={features}
 						>
 							<Button
 								className='bg-gray-800 text-gray-300/90 hover:bg-gray-800/70

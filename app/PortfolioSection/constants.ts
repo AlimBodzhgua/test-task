@@ -73,6 +73,42 @@ const REMINDERS_IMAGES = [
 	'/screenshots/reminders/overview.png',
 ];
 
+const QUIZ_MAKER_FEATURES = [
+	'Creation of tests with support for multiple question types and answer options',
+	'Flexible privacy settings for tests (public, private, password-protected, or accessible via link',
+	'Ability to set time limits for taking the test',
+	'Convenient table of all tests with pagination, search, and filters',
+	'Automatic calculation of results with display of correct and incorrect answers',
+	'Ability to rate the test, print the result, and share it',
+	'Fully custom backend built from scratch with JWT token authentication',
+	'Dark theme support',
+	'Multi-language support (Russian and English)'
+]
+
+const CRYPTO_TRACKER_FEATURES = [
+	'Real-time display of global cryptocurrency market statistics',
+	'Comprehensive table of all coins with detailed data and price dynamics',
+	'Advanced search, multi-level filtering, and sorting',
+	'Infinite scroll with scroll position preservation after page reload',
+	'Personal Watchlist for tracking favorite assets',
+	'Interactive price chart for the last 24 hours',
+	'Convenient cryptocurrency converter',
+	'Ability to choose the base currency for the entire app (USD, RUB, EUR)',
+	'Multi-language support (Russian and English)',
+	'User authentication via email/password and Google Sign-In',
+	'Backend implemented with Firebase (Authentication + Firestore)',
+]
+
+const REMINDERS_FEATURES = [
+	'Full-featured task manager with complete CRUD operations, inspired by the native macOS Reminders app',
+	'Advanced search and flexible filtering by categories, priority, and date',
+	'Creation of custom categories with individual icons and colors',
+	'Task priority system',
+	'Adding web links, date, time, and geolocation to tasks (integration with Yandex Maps)',
+	'User authentication',
+	'Fully custom backend built from scratch — including database schema design and authentication system with JWT token',
+]
+
 export const projectsList: Project[] = [
 	{
 		name: 'Quiz maker',
@@ -96,8 +132,11 @@ export const projectsList: Project[] = [
 		backendTechnologies: ['Express', 'MongoDB', 'Mongoose', 'JWT'],
 		othersTechnologies: ['ESLint', 'Prettier', 'Stylelint', 'Git', 'Docker'],
 		overview: `A full-stack web application for creating and taking quizzes with privacy controls,
-					sharing quizzes with friends, editing questions, saving quiz scores, and a user authorization system.`,
+					sharing quizzes with friends, editing questions, saving quiz scores, and a user authorization system.
+					Built using Feature-Slice Design (FSD) architecture for better scalability and applicability
+				`,
 		images: QUIZ_MAKER_IMAGES,
+		features: QUIZ_MAKER_FEATURES,
 	},
 	{
 		name: 'Reminders app',
@@ -135,6 +174,7 @@ export const projectsList: Project[] = [
 					first time, map addresses using Yandex Maps, attach links,
 					tags, and times, and drag-and-drop sorting.`,
 		images: REMINDERS_IMAGES,
+		features: REMINDERS_FEATURES,
 	},
 	{
 		name: 'Crypto tracker',
@@ -152,7 +192,8 @@ export const projectsList: Project[] = [
 		overview: `
 			An app for tracking current cryptocurrency rates with visualization of price dynamics and detailed
 			statistics. Available in three different currencies (USD/RUB/EUR). Integration with the CoinGecko
-			API allows for real-time data collection. The system also includes user authentication with the option to log in via Google.`,
+			API allows for real-time data collection. The system also includes user authentication with the option to log in via Google and fully covered with unit-tests`,
 		images: CRYPTO_TRACKER_IMAGES,
+		features: CRYPTO_TRACKER_FEATURES,
 	},
 ];

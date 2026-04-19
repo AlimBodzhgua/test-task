@@ -3,7 +3,7 @@ import type {
 	FrontendTechnologyName,
 	OthersTechnologyName,
 } from '../types';
-import { FileText as FileTextIcon, Code as CodeIcon } from 'lucide-react';
+import { FileText as FileTextIcon, Code as CodeIcon, StarIcon } from 'lucide-react';
 import Image from 'next/image';
 import { ContactData } from './ContactData';
 
@@ -12,10 +12,17 @@ interface ProjectInformationProps {
 	backendTechnologies: BackendTechnologyName[];
 	othersTechnologies: OthersTechnologyName[];
 	overview: string;
+	features: string[];
 }
 
 export function ProjectInformation(props: ProjectInformationProps) {
-	const { frontendTechnologies, backendTechnologies, othersTechnologies, overview } = props;
+	const {
+		frontendTechnologies,
+		backendTechnologies,
+		othersTechnologies,
+		overview,
+		features,
+	} = props;
 
 	return (
 		<div className='px-4'>
@@ -103,12 +110,30 @@ export function ProjectInformation(props: ProjectInformationProps) {
 				</div>
 			</div>
 
-			<div className='mb-5 lg:mb-0'>
+			<div className='mb-6'>
 				<div className='flex items-center gap-2 mb-3'>
-					<FileTextIcon />
+					<FileTextIcon fill='cyan' size={28}/>
 					<div className='font-semibold text-2xl'>Overview</div>
 				</div>
 				<p className='text-lg text-gray-500 px-4 py-1'>{overview}</p>
+			</div>
+
+			<div className='mb-5 lg:mb-0'>
+				<div className='flex items-center gap-2 mb-3'>
+					<StarIcon fill='orange' size={28} />
+					<div className='font-semibold text-2xl'>Features</div>
+				</div>
+				<ul className='flex flex-col gap-2 pl-6'>
+					{features.map((feature) => (
+						<li
+							className='list-disc text-lg text-gray-500 font-semibold marker:text-gray-700'
+							key={feature}
+						>
+							{feature}
+						</li>
+					))}
+				</ul>
+
 			</div>
 
 			<div className='block lg:hidden'>
