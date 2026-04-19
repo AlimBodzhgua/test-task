@@ -1,19 +1,15 @@
-import type {
-	BackendTechnologyName,
-	FrontendTechnologyName,
-	OthersTechnologyName,
-} from '../types';
-import { FileText as FileTextIcon, Code as CodeIcon, StarIcon } from 'lucide-react';
+import type { Project } from '../types';
+import { FileTextIcon, CodeIcon, StarIcon } from 'lucide-react';
 import Image from 'next/image';
 import { ContactData } from './ContactData';
 
-interface ProjectInformationProps {
-	frontendTechnologies: FrontendTechnologyName[];
-	backendTechnologies: BackendTechnologyName[];
-	othersTechnologies: OthersTechnologyName[];
-	overview: string;
-	features: string[];
-}
+type ProjectInformationProps = Pick<Project,
+	'frontendTechnologies' | 
+	'backendTechnologies' | 
+	'othersTechnologies' |
+	'overview' |
+	'features'
+>
 
 export function ProjectInformation(props: ProjectInformationProps) {
 	const {

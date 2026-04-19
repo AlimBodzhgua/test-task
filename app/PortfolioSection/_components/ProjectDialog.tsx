@@ -1,10 +1,5 @@
 import type { ReactNode } from 'react';
-import type {
-	BackendTechnologyName,
-	CategoryType,
-	FrontendTechnologyName,
-	OthersTechnologyName,
-} from '../types';
+import type { Project } from '../types';
 
 import { VisuallyHidden } from 'radix-ui';
 import { Dialog, DialogContent, DialogTitle, DialogTrigger } from '@/components/ui';
@@ -12,20 +7,9 @@ import { ProjectSidebar } from './ProjectSidebar';
 import { ProjectScreenshots } from './ProjectScreenshots';
 import { ProjectInformation } from './ProjectInformation';
 
-type ProjectDialogProps = {
+type ProjectDialogProps = Omit<Project, 'headerUrl' | 'previewImage' | 'baseTechnologies'> & {
 	children: ReactNode;
-	name: string;
-	description: string;
-	overview: string;
-	category: CategoryType;
-	createdAt: string;
-	githubLink: string;
-	images: string[];
-	features: string[];
-	frontendTechnologies: FrontendTechnologyName[];
-	backendTechnologies: BackendTechnologyName[];
-	othersTechnologies: OthersTechnologyName[];
-};
+}
 
 export function ProjectDialog(props: ProjectDialogProps) {
 	const {

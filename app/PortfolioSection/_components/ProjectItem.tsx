@@ -1,10 +1,4 @@
-import type {
-	BackendTechnologyName,
-	CategoryType,
-	FrontendTechnologyName,
-	OthersTechnologyName,
-	TechnologyName,
-} from '../types';
+import type { Project } from '../types';
 
 import Image from 'next/image';
 import { InfoIcon } from 'lucide-react';
@@ -12,22 +6,7 @@ import { Button } from '@/components/ui';
 import { Safari } from '@/components/ui/safari';
 import { ProjectDialog } from './ProjectDialog';
 
-interface ProjectItemProps {
-	name: string;
-	description: string;
-	overview: string;
-	githubLink: string;
-	headerUrl?: string;
-	previewImage: string;
-	category: CategoryType;
-	createdAt: string;
-	images: string[];
-	features: string[];
-	baseTechnologies: TechnologyName[];
-	frontendTechnologies: FrontendTechnologyName[];
-	backendTechnologies: BackendTechnologyName[];
-	othersTechnologies: OthersTechnologyName[];
-}
+type ProjectItemProps = Project;
 
 export function ProjectItem(props: ProjectItemProps) {
 	const {

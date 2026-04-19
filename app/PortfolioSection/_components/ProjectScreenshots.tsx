@@ -7,7 +7,7 @@ import {
 } from '@/components/ui';
 import Image from 'next/image';
 
-interface ProjectScreenshotsProps {
+type ProjectScreenshotsProps = {
 	images: string[];
 }
 

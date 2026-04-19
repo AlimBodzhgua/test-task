@@ -1,13 +1,10 @@
 import type { CategoryType } from '../types';
-import {
-	Calendar as CalendarIcon,
-	Tag as TagIcon,
-} from 'lucide-react';
+import { CalendarIcon, TagIcon } from 'lucide-react';
 import Image from 'next/image';
 import { Button } from '@/components/ui';
 import { ContactData } from './ContactData';
 
-interface ProjectSidebarProps {
+type ProjectSidebarProps = {
 	name: string;
 	description: string;
 	createdAt: string;
