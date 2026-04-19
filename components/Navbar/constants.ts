@@ -1,12 +1,5 @@
 import type { NavbarItemType, SectionType } from './types';
-
-import {
-	Briefcase as BriefcaseIcon,
-	CircleUser as CircleUserIcon,
-	Code as CodeIcon,
-	House as HouseIcon,
-	Mail as MailIcon,
-} from 'lucide-react';
+import { BriefcaseIcon, CircleUserIcon, CodeIcon, HouseIcon, MailIcon } from 'lucide-react';
 
 export const sections: SectionType[] = ['home', 'about', 'skills', 'portfolio', 'contact'];
 

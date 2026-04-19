@@ -1,8 +1,4 @@
-import {
-	ArrowUp as ArrowUpIcon,
-	Link as LinkIcon,
-	UserRound as UserRoundIcon,
-} from 'lucide-react';
+import { ArrowUpIcon, LinkIcon, UserRoundIcon } from 'lucide-react';
 import { Button } from '../ui';
 
 export function Footer() {

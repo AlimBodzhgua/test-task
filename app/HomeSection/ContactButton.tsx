@@ -1,6 +1,6 @@
 'use client';
 
-import { Mail as MailIcon } from 'lucide-react';
+import { MailIcon } from 'lucide-react';
 import { GlassButton } from '@/components/ui';
 
 export function ContactButton() {

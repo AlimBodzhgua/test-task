@@ -1,4 +1,4 @@
-import { CircleCheck as CircleCheckIcon, MapPin as MapPinIcon } from 'lucide-react';
+import { CircleCheckIcon, MapPinIcon } from 'lucide-react';
 import { BlurFade, ShineBorder, TextShimmer, Tilt } from '@/components/ui';
 import { statCardsList } from '../constants';
 import { StatCard } from './StatCard';

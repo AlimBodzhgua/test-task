@@ -1,4 +1,4 @@
-import { FileText as FileTextIcon } from 'lucide-react';
+import { FileTextIcon } from 'lucide-react';
 import { BlurFade, GlassButton, Particles, TypingAnimation } from '@/components/ui';
 import { ContactButton } from './ContactButton';
 

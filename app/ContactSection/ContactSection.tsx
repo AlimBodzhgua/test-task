@@ -1,9 +1,4 @@
-import {
-	Mail as MailIcon,
-	MapPin as MapPinIcon,
-	Phone as PhoneIcon,
-	Send as SendIcon,
-} from 'lucide-react';
+import { MailIcon, MapPinIcon, PhoneIcon, SendIcon } from 'lucide-react';
 import Image from 'next/image';
 import { BlurFade, Button, CardBody, CardContainer, CardItem, Particles } from '@/components/ui';
 import { GITHUB_LINK, TELEGRAM_LINK } from '@/snared/constants';

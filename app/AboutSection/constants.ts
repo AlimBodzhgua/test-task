@@ -1,9 +1,5 @@
 import type { StatCardType } from './types';
-import {
-	BookMarked as BookMarkedIcon,
-	CalendarDays as CalendarDaysIcon,
-	CodeXml as CodeXmlIcon,
-} from 'lucide-react';
+import { BookMarkedIcon, CalendarDaysIcon, CodeXmlIcon } from 'lucide-react';
 
 export const statCardsList: StatCardType[] = [
 	{
